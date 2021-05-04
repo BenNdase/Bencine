@@ -6,4 +6,4 @@ const Home = () => {
         </div>
     )
 }
-export default CarouselContainer;
+export default Home;
