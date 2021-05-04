@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    justify-content: space-evenly !important;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+form{
+    position: relative;
+    right: 0;
+}
+.input-group-prepend{
+    background-color: #F1792F !important;
+    cursor: pointer;
+}

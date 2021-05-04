@@ -1,21 +1,37 @@
-import { Navbar, Nav, Form, FormControl } from "react-bootstrap";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Navigationbar = () => {
   return (
-    <div>
-      <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#home">BenCine</Navbar.Brand>
-        <Nav className="mr-auto">
-          <Link to="/">Accueil</Link>
-          <Link to="/films">Films</Link>
-          <Link to="/séries">Séries</Link>
-        </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        </Form>
-      </Navbar>
-    </div>
+    <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul className="navbar-nav">
+        <li className="navbar-brand">
+          Ben.ciné
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link text-white" to="/">
+            Accueil
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link text-white" to="/films">
+            Films
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link text-white" to="/series">
+            Séries
+          </Link>
+        </li>
+      </ul>
+      <form class="form-inline" action="/action_page.php">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Recherche" />
+          <div class="input-group-prepend">
+            <span class="input-group-text">@</span>
+          </div>
+        </div>
+      </form>
+    </nav>
   );
 };
 export default Navigationbar;
