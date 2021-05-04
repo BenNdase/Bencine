@@ -1,4 +1,4 @@
-import CarouselContainer from './carousel/CarouselContainer';
+import CarouselContainer from './CarouselContainer';
 const Home = () => {
     return(
         <div>

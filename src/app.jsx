@@ -5,7 +5,6 @@ const App = () => {
     <div>
       <Router>
         <Switch>
-          {/* <CarouselContainer /> */}
           <Route exact path="/" component={Home} />
         </Switch>
       </Router>
