@@ -1,0 +1,7 @@
+.carousel{
+    background-image: linear-gradient(to right bottom,rgba(41, 40, 40, 0)), url("../assets/Header/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
