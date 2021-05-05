@@ -1,37 +1,32 @@
 import { Link } from "react-router-dom";
+import '../sass/components/Navbar.scss';
 
 const Navigationbar = () => {
   return (
-    <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
-      <ul className="navbar-nav">
-        <li className="navbar-brand">
-          Ben.ciné
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link text-white" to="/">
-            Accueil
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link text-white" to="/films">
-            Films
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link text-white" to="/series">
-            Séries
-          </Link>
-        </li>
-      </ul>
-      <form class="form-inline" action="/action_page.php">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Recherche" />
-          <div class="input-group-prepend">
-            <span class="input-group-text">@</span>
-          </div>
+        <div className="container">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="navbar-brand">
+              <span>Ben.</span>
+              <span>Ciné</span>
+            </div>
+            <div className="navbar-items navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <li className="nav-item">
+                  <Link className="nav-link active text-white" aria-current="page" to="/">Accueil</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/films">Films</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/séries">Séries</Link>
+                </li>
+              </ul>
+            </div>
+            <form className="d-flex">
+              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Recherche"/>
+            </form>
+          </nav>
         </div>
-      </form>
-    </nav>
   );
 };
 export default Navigationbar;

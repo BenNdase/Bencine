@@ -1,16 +1,28 @@
 .navbar{
+    background-color: rgba(0, 0, 0, 0) !important;
+    padding-top: 2%;
     display: flex;
-    justify-content: space-evenly !important;
-    align-items: center;
-    font-family: Roboto, sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-form{
-    position: relative;
-    right: 0;
-}
-.input-group-prepend{
-    background-color: #F1792F !important;
-    cursor: pointer;
+    justify-content: space-between;
+
+    &-brand span:nth-child(1){
+        color: #F1792F;
+        font-family: 'Ubuntu Mono', monospace;
+        font-weight: bold;
+        background-color: white;
+        padding: 2%;
+    }
+    &-brand span:nth-child(2){
+        color: white;
+        font-family: 'Ubuntu Mono', monospace;
+        font-weight: bold;
+        background-color: #F1792F;
+        padding: 2%;
+    }
+    &-items{
+        
+    }
+    &-nav{
+        font-family: 'Ubuntu Mono', monospace;
+        font-weight: bold; 
+    }
 }
